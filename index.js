@@ -4,11 +4,11 @@ var parent = document.getElementById("bar");
 //function to generate random numbers array
 function generateArray(){
     deleteChild();
-    for(let i=0;i<100;i++){
+    for(let i=0;i<60;i++){
         array[i] = generateRandom();
     }
     const bars = document.querySelector("#bar");
-    for (let i = 0;i<100;i++) {
+    for (let i = 0;i<60;i++) {
         const bar = document.createElement("div");
         bar.style.height = `${array[i]*4}px`;
         bar.classList.add('barheight');
