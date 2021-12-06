@@ -7,6 +7,7 @@ async function insertionsort(ele){
             await wait(delay);
             ele[j].style.background = 'orange';
             if(parseInt(ele[i].style.height)>parseInt(ele[j].style.height)){
+                await wait(delay);
                 swap(ele[i],ele[j]);
             }
             await wait(delay);
