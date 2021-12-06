@@ -16,10 +16,10 @@ function generateArray(){
     }
 }
 
-let delay = 10;
+let delay = 500;
 let speed = document.querySelector("#speed_input");
 speed.addEventListener('input',function(){
-    delay = 300 - speed.value;
+    delay = 1000 - speed.value;
 });
 
 // function to generate random numbers

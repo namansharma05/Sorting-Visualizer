@@ -3,13 +3,15 @@ async function partition(ele,left,right){
     let i = left-1;
     ele[right].style.background = 'red';
 	for(let j=left;j<right;j++){
-        ele[j].style.background = 'orange';
         await wait(delay);
+        ele[j].style.background = 'orange';
         if(parseInt(ele[j].style.height)<=parseInt(ele[right].style.height)){
             i++;
-            ele[i].style.background = 'green';
 			await wait(delay);
+            ele[i].style.background = 'green';
+            await wait(delay);
             swap(ele[j],ele[i]);
+            await wait(delay);
             ele[i].style.background = 'turquoise';
 		}
         ele[j].style.background = 'turquoise';
